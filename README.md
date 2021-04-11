@@ -13,21 +13,34 @@
 <h1>DATABASE TASARIM DIAGRAMI</h1>
 <img src="https://github.com/kadir-aztekin/ReCapFrontend-master/blob/917601c86623f38c64463abe06ef9f02094cd7c9/src/assets/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(70).png" width="45%"></img>
 
+<h1>ARCHITECTURAL</h1>
+Tecnologies
+★Angular 11 <br>
+★TypeScript <br>
+★Primeng <br>
+★Angular/cdk <br>
+FrontendTechniques
+★Pipe <br>
+★JWT <br>
+★Service <br>
+★ToastrService <br>
+★Fontawesome <br>
+
 <h1>PROJE AÇIKLAMASI</h1>
 C# VE ANGULAR TEMEL YAPILI ARAÇ KIRALAMA WEB SİTESİ
 
 BACKEND TARAFINDA;
-★ Katmanlı Mimari 
-★ Restful Api
-★ Entity Framework 
-★ Aspect Oriented Programming (AOP)
-★ Cache ,Log,Validation,Exception Handling 
-★ Object Oriented Programming (OOP)
-★ Yapıları Kullanıldı
+★ Katmanlı Mimari  <br>
+★ Restful Api <br>
+★ Entity Framework  <br>
+★ Aspect Oriented Programming (AOP) <br>
+★ Cache ,Log,Validation,Exception Handling <br> 
+★ Object Oriented Programming (OOP) <br>
+★ Yapıları Kullanıldı <br>
 
 FRONTEND TARAFINDA;
-★ Component ,Service bazlı çalışma
-★ Toaster
-★ Bootstrap5 
+★ Component ,Service bazlı çalışma <br>
+★ Toaster <br>
+★ Bootstrap5  <br>
 
 Yapıları En Profosyonel Şekilde Kullanıldı 
