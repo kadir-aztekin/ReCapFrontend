@@ -1,6 +1,6 @@
 # ReCapFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+<img src="https://github.com/kadir-aztekin/ReCapFrontend-master/blob/a19d6552902dae8175c858b3e5e891ce9cfcce31/src/assets/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(61).png" width="45%"></img>
 
 ## Development server
 
