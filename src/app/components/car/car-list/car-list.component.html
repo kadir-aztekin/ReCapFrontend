@@ -62,6 +62,45 @@
                 </table>
               </div>
             </li>
+            <li data-aos-delay="100">
+              <a
+                data-toggle="collapse"
+                class="collapse"
+                href="#accordion-list-1"
+                >Fiyat <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="accordion-list-1"
+                class="collapse show"
+                data-parent=".accordion-list"
+              >
+                <table class="table table-hover table-striped shadow-lg">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Araç Fiyatı</th>
+                      <th class="text-center"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr *ngFor="let x of carDetails">
+                      <td class="text-center">{{ x.dailyPrice }}</td>
+                      <td class="text-center">
+                        <button
+                          routerLink="/dailyPrice/{{ x.dailyPrice }}"
+                          type="button"
+                          class="btn btn-outline-dark px-3"
+                        >
+                          <i class="bx bxs-message-square-edit"></i>
+                          Filtrele
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

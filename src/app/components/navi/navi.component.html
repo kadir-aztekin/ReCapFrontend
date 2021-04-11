@@ -3,36 +3,30 @@
 
       <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
       <div class="logo d-block d-lg-none">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="../../../assets/img/KA.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul class="nav-inner">
-          <li routerLinkActive="active"><a routerLink="/homepage" >Home</a></li>
-          <li class="drop-down"><a href="">About</a>
+          <li routerLinkActive="active"><a routerLink="/homepage" >AnaSayfa</a></li>
+          
+          <li class="drop-down"><a href="">Ekleme</a>
             <ul>
-              <li><a routerLink="/colorAdd">Resim Ekleme</a></li>
+              <li><a routerLink="/colorAdd">Renk Ekleme</a></li>
               <li><a routerLink="/brandAdd">Marka Ekleme</a></li>
               <li><a routerLink="/carAdd">Araç Ekleme</a></li>
 
-              <li class="drop-down"><a href="#">Deep Drop</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+              
             </ul>
+          
           </li>
-          <li><a href="#services">Services</a></li>
+          
 
-          <li class="nav-logo"><a routerLink="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
+          <li class="nav-logo"><a routerLink="/"><img  src="../../../assets/img/siyah.png" style="height: 80px;" alt="" class="img-fluid"></a></li>
 
           <li routerLinkActive="active"><a routerLink="/cars" >Tüm Araçlar</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li (click)="logout()"><a href="#contact">İleşim</a></li>
+          <li routerLinkActive="active"><a routerLink="/contact" >İletişim</a></li>
+          <li (click)="logout()"><a href="#contact">Çıkış</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->

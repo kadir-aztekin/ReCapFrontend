@@ -21,6 +21,7 @@ import { from } from 'rxjs';
 import { ColorAddComponent } from './components/color-add/color-add.component';
 import { BrandAddComponent } from './components/brand-add/brand-add.component';
 import { CarAddComponent } from './components/car-add/car-add.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CarAddComponent } from './components/car-add/car-add.component';
     ColorAddComponent,
     BrandAddComponent,
     CarAddComponent,
+    ContactComponent,
 
 
   ],
