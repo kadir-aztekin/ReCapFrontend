@@ -1,0 +1,22 @@
+<app-navi></app-navi>
+
+<form [formGroup]="registerForm" class="form-signin">
+       
+    <h1 class="h3 mb-4 mx-5">Giriş Yapın</h1>
+
+    <label for="inputName" class="sr-only">İsim</label>
+    <input formControlName="firstName" type="text" id="inputName" class="form-control" placeholder="İsim" required autofocus>
+
+    <label for="inputLastName" class="sr-only">Soyisim</label>
+    <input formControlName="lastName" type="text" id="inputLastName" class="form-control" placeholder="Soyisim" required autofocus>
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input formControlName="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    
+    <button class="btn btn-lg btn-primary btn-block" (click)="register()">Kayıt Ol</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+  </form>
+  

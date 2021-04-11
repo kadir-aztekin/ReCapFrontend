@@ -1,0 +1,49 @@
+<app-navi></app-navi>
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Markalarımız</h2>
+      <h4>En güvenilir araç kiralama şirketiniz</h4>
+    </div>
+    <div
+      class="row mb-4"
+      *ngFor="
+        let brand of branddetail;
+        index as i;
+        first as firstImage
+      "
+      [ngClass]="{ active: firstImage }"
+    >
+      <div class="col-lg-6" data-aos="fade-right">
+        <div>
+          <img
+            style="
+              transform: translate(-20%);"
+            src="https://localhost:44398/{{ brand.carBrandImagePath }}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div  class="col-lg-6" data-aos="fade-left">
+        <div  class="content pt-4 pt-lg-0 pl-0 pl-lg-3">
+          <h3>{{brand.brandName}}</h3>
+          
+         
+          <p class="font-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button
+            type="button"
+            data-aos="fade-up"
+            routerLink="/cars/{{ brand.brandId }}"
+            class="btn btn-outline-dark"
+          >
+            Araçlara Git
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,119 @@
+<app-navi></app-navi>
+
+<section id="clients" class="clients">
+  <div class="container py-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let carBrandImage of branddetail">
+        <ng-template carouselSlide [id]="'carBrandImage.id'">
+          <img
+            routerLink="/cars/{{ carBrandImage.brandId }}"
+            class="cursor"
+            src="https://localhost:44398/{{ carBrandImage.carBrandImagePath }}"
+            [alt]="carBrandImage.brandId"
+          />
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section id="why-us" class="why-us">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="accordion-list p-0">
+          <ul>
+            <li data-aos-delay="100">
+              <a
+                data-toggle="collapse"
+                class="collapse"
+                href="#accordion-list-1"
+                >Renkler <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="accordion-list-1"
+                class="collapse show"
+                data-parent=".accordion-list"
+              >
+                <table class="table table-hover table-striped shadow-lg">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Renk Adı</th>
+                      <th class="text-center"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr *ngFor="let color of colors">
+                      <td class="text-center">{{ color.colorName }}</td>
+                      <td class="text-center">
+                        <button
+                          routerLink="/color/{{ color.id }}"
+                          type="button"
+                          class="btn btn-outline-dark px-3"
+                        >
+                          <i class="bx bxs-message-square-edit"></i>
+                          Filtrele
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <table class="table table-hover shadow-lg">
+          <thead>
+            <tr>
+              <th class="text-center">Marka</th>
+              <th>Model</th>
+              <th>Model Yılı</th>
+              <th>Renk</th>
+              <th>₺ Fiyatı</th>
+              <th class="text-center">
+                <i class="bx bx-image" style="font-size: 25px"></i>
+              </th>
+
+              <th class="text-center">
+                <i class="bx bxs-detail"></i> Detaylar
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cardetail of carDetails">
+              <td class="text-center">{{ cardetail.brandName }}</td>
+              <td>{{ cardetail.description }}</td>
+              <td>{{ cardetail.modelYear }}</td>
+              <td>{{ cardetail.colorName }}</td>
+              <td>{{ cardetail.dailyPrice | currency: "₺ " }}</td>
+              <td class="text-center brandImage">
+                <img
+                  src="https://localhost:44398/{{
+                    cardetail.carBrandImagePath
+                  }}"
+                  [alt]="cardetail.brandName"
+                />
+              </td>
+              <td class="text-center">
+                <button
+                  type="button"
+                  data-aos="fade-up"
+                  routerLink="/cardetail/{{ cardetail.id }}"
+                  class="btn btn-outline-dark px-3"
+                >
+                  <i class="bx bxs-detail"></i>
+                  Detaylara Git
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

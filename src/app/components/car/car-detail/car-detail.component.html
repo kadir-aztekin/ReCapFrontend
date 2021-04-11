@@ -1,0 +1,90 @@
+<app-navi></app-navi>
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div *ngFor="let cardetail of carDetail;" class="section-title" data-aos="fade-up">
+      <h2>Araç Detayları</h2>
+      <p>
+        {{cardetail.description}} model aracımızın detayları...
+      </p>
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" *ngFor="let cardetail of carDetail;">
+    <div
+      *ngFor="let i of cardetail.imagePath"
+      class="col-lg-4 col-md-6"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div clas="portfolio-item filter-app">
+        <div  class="portfolio-wrap">
+          <img
+            src="https://localhost:44398/{{i}}"
+            class="img-thumbnail"
+            style="height:'30vh'"
+            alt=""
+          />
+          <div class="portfolio-info">
+            <h4>{{cardetail.description}}</h4>
+            <div class="portfolio-links">
+              <a
+                href="https://localhost:44398/{{i}}"
+                data-gall="portfolioGallery"
+                class="venobox"
+                title="App 1"
+                ><i class="bx bx-plus"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End Portfolio Section -->
+<section id="why-us" class="why-us">
+  <div class="container-fluid">
+    <div class="col-lg-12">
+      <table class="table table-hover shadow-lg">
+        <thead>
+          <tr>
+            <th class="text-center">
+              <i class="bx bx-image" style="font-size: 15px"></i>
+              Marka
+            </th>
+            
+            <th>₺ Fiyatı</th>
+            <th>Model Yılı</th>
+            <th>Renk</th>
+            <th>Model</th>
+            <th class="text-center"></th>
+          </tr>
+        </thead>
+
+        <tr *ngFor="let cardetail of carDetail">
+          <td class="text-center brandImage">
+          <img
+            style="height: 50px;"
+            src="https://localhost:44398/{{ cardetail.carBrandImagePath }}"
+            class="img-fluid"
+            alt=""
+          />
+          </td>
+            
+          
+          <td>{{ cardetail.dailyPrice | currency: "₺ " }}</td>
+          <td>{{ cardetail.modelYear }}</td>
+          <td>{{ cardetail.colorName }}</td>
+          <td>{{ cardetail.description }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>

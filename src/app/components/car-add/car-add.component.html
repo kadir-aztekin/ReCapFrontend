@@ -1,0 +1,20 @@
+
+<app-navi></app-navi>
+
+<form [formGroup]="carAddForm" class="form-signin">
+
+    <h1 class="h3 mb-4 mx-5">Araç Ekleme</h1>
+    <label class="sr-only">Araba</label>
+    <input class="form-control" formControlName="modelYear" placeholder="Model Yılını Giriniz" required autofocus> <br>
+    <input class="form-control"  formControlName="dailyPrice" placeholder="Fiyat Giriniz" required autofocus> <br>
+    <input class="form-control"  formControlName="description" placeholder="Açıklama Giriniz" required autofocus><br>
+    <input class="form-control"  formControlName="brandId" placeholder="Marka Id Giriniz" required autofocus> <br>
+    <input class="form-control"  formControlName="colorId" placeholder="Renk Id Giriniz" required autofocus><br>
+    
+   
+    
+    <button class="btn btn-lg btn-primary btn-block" (click)="add()">Ekle</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+  </form>
+
+

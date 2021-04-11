@@ -1,0 +1,11 @@
+table > tbody > tr > td{
+    vertical-align: middle;
+    
+}
+.cursor{
+    cursor: pointer;
+}
+
+.brandImage >img{
+    height: 50px;
+}
