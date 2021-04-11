@@ -29,7 +29,7 @@ FrontendTechniques  <br>
 <h1>PROJE AÇIKLAMASI</h1>
 C# VE ANGULAR TEMEL YAPILI ARAÇ KIRALAMA WEB SİTESİ
 
-BACKEND TARAFINDA;
+BACKEND TARAFINDA; <br>
 ★ Katmanlı Mimari  <br>
 ★ Restful Api <br>
 ★ Entity Framework  <br>
@@ -37,8 +37,8 @@ BACKEND TARAFINDA;
 ★ Cache ,Log,Validation,Exception Handling <br> 
 ★ Object Oriented Programming (OOP) <br>
 ★ Yapıları Kullanıldı <br>
-
-FRONTEND TARAFINDA;
+ 
+FRONTEND TARAFINDA; <br>
 ★ Component ,Service bazlı çalışma <br>
 ★ Toaster <br>
 ★ Bootstrap5  <br>
