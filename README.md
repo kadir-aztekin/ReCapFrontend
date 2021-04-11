@@ -14,7 +14,7 @@
 <img src="https://github.com/kadir-aztekin/ReCapFrontend-master/blob/917601c86623f38c64463abe06ef9f02094cd7c9/src/assets/img/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(70).png" width="45%"></img>
 
 <h1>ARCHITECTURAL</h1>
-Tecnologies
+Tecnologies  <br>
 ★Angular 11 <br>
 ★TypeScript <br>
 ★Primeng <br>
