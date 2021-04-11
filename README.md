@@ -19,7 +19,7 @@ Tecnologies  <br>
 ★TypeScript <br>
 ★Primeng <br>
 ★Angular/cdk <br>
-FrontendTechniques
+FrontendTechniques  <br>
 ★Pipe <br>
 ★JWT <br>
 ★Service <br>
