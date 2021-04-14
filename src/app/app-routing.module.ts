@@ -12,23 +12,22 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { TeamComponent } from './components/team/team.component';
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: 'cars', component: CarListComponent },
   { path: 'cars/:brandId', component: CarListComponent },
-  { path: 'cardetail/:carId', component:CarDetailComponent},
-  { path: 'color/:colorId', component:CarListComponent},
+  { path: 'cardetail/:carId', component: CarDetailComponent },
+  { path: 'color/:colorId', component: CarListComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  {path: "colorAdd", component:ColorAddComponent},
-  {path: "brandAdd", component:BrandAddComponent},
-  {path: "carAdd", component:CarAddComponent},
-  {path: "contact", component:ContactComponent},
-  { path: 'dailyPrice/:dailyPrice', component:CarListComponent},
-
-
-  
+  { path: 'colorAdd', component: ColorAddComponent },
+  { path: 'brandAdd', component: BrandAddComponent },
+  { path: 'carAdd', component: CarAddComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'dailyPrice/:dailyPrice', component: CarListComponent },
+  { path: 'team', component: TeamComponent },
 
   { path: '**', component: IntroComponent, pathMatch: 'full' },
 ];

@@ -22,6 +22,7 @@ import { ColorAddComponent } from './components/color-add/color-add.component';
 import { BrandAddComponent } from './components/brand-add/brand-add.component';
 import { CarAddComponent } from './components/car-add/car-add.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ContactComponent } from './components/contact/contact.component';
     BrandAddComponent,
     CarAddComponent,
     ContactComponent,
+    TeamComponent,
 
 
   ],
